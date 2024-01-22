@@ -12,7 +12,6 @@ const sendEmail = async ({
   subject: string;
   mailgen: any;
 }) => {
-
   const emailTextual = `Hello ${mailgen.username}
   This is to verify your email click on the link 
   ${mailgen.verifyEmail}`;

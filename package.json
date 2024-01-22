@@ -40,10 +40,11 @@
     "@types/nodemailer": "^6.4.14",
     "@typescript-eslint/eslint-plugin": "^6.19.0",
     "@typescript-eslint/parser": "^6.19.0",
-    "nodemon": "^3.0.3"
+    "nodemon": "^3.0.3",
+    "typescript": "^5.3.3"
   },
   "lint-staged": {
-    "src/**/*.{js,ts,json,html,css}": "prettier --write",
+    "**/*.{js,ts,json,html,css}": "prettier --write",
     "src/**/*.ts": "eslint"
   }
 }
