@@ -8,7 +8,8 @@
     "start": "node dist/index.js",
     "dev": "nodemon src/index.ts",
     "build": "tsc -p .",
-    "lint": "lint-staged"
+    "lint": "lint-staged",
+    "prepare": "husky install"
   },
   "dependencies": {
     "bcrypt": "^5.1.1",
@@ -41,7 +42,8 @@
     "@typescript-eslint/eslint-plugin": "^6.19.0",
     "@typescript-eslint/parser": "^6.19.0",
     "nodemon": "^3.0.3",
-    "typescript": "^5.3.3"
+    "typescript": "^5.3.3",
+    "husky": "^8.0.0"
   },
   "lint-staged": {
     "**/*.{js,ts,json,html,css}": "prettier --write",
