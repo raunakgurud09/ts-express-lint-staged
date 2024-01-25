@@ -10,7 +10,7 @@ dotenv.config({
   path: "./.env",
 });
 
-const app = express();
+export const app = express();
 
 const httpServer = createServer(app);
 
