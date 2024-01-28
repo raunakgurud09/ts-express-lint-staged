@@ -18,5 +18,4 @@ jobs:
         topic: "run from hello yml"
         secret: ${{secrets.SECRET}}
     - name: Get get output
-      run: echo "the time was ${{steps.hello.output.time}}"
-      run: echo "message ${{steps.hello.output.message}}"
+      run: echo "the time was ${{steps.hello.output.time}} message ${{steps.hello.output.message}}"
