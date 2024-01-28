@@ -13,9 +13,8 @@ const server = async () => {
       console.log("⚙️  Server is running on port: " + process.env.PORT);
     });
   } catch (err) {
-    console.log("Mongo db connect error: ", err);
+    console.log("Mongo db error: ", err);
   }
 };
-
 
 server();
