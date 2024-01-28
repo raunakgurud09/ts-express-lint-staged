@@ -13,10 +13,10 @@ jobs:
     steps:
     - name: Get details
       uses: raunakgurud09/action-hello@v1
-        with:
-          name: "john doe"
-          topic: "run from hello yml"
-          secret: ${{secrets.SECRET}}
+      with:
+        name: "john doe"
+        topic: "run from hello yml"
+        secret: ${{secrets.SECRET}}
     - name: Get get output
       run: echo "the time was ${{steps.hello.output.time}}"
       run: echo "message ${{steps.hello.output.message}}"
