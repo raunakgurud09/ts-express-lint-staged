@@ -12,7 +12,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     - name: Get details
-      uses: raunakgurud09/action-hello@v1
+      uses: raunakgurud09/action-hello@v2
       with:
         name: "john doe"
         topic: "run from hello yml"
