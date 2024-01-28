@@ -17,9 +17,6 @@ jobs:
           name: "john doe"
           topic: "run from hello yml"
           secret: ${{secrets.SECRET}}
-    - uses: actions/checkout@v3
-    - name: Use Node.js ${{ matrix.node-version }}
-      uses: actions/setup-node@v3
-      with:
-        node-version: ${{ matrix.node-version }}
-        cache: 'yarn'
+    - name: Get get output
+      run: echo "the time was ${{steps.hello.output.time}}"
+      run: echo "message ${{steps.hello.output.message}}"
