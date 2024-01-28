@@ -12,10 +12,11 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     - name: Get details
-      uses: raunakgurud09/action-hello@v2
+      id: details
+      uses: raunakgurud09/action-hello@v3
       with:
         name: "john doe"
         topic: "run from hello yml"
         secret: ${{secrets.SECRET}}
     - name: Get get output
-      run: echo "the time was ${{steps.hello.output.time}} message ${{steps.hello.output.message}}"
+      run: echo "The time was ${{steps.details.output.time}} message ${{steps.details.output.message}}"
