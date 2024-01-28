@@ -13,7 +13,7 @@ jobs:
     steps:
     - name: Get details
       id: details
-      uses: raunakgurud09/action-hello@v3
+      uses: raunakgurud09/action-hello@v2.1
       with:
         name: "john doe"
         topic: "run from hello yml"
